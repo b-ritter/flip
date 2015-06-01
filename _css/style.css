@@ -1,0 +1,15 @@
+#hand{
+	width:108px;
+	height:116px;
+	background-image:url("../_img/hand.png");
+	animation: flip .5s steps(6);
+	animation-iteration-count: 1;
+	animation-play-state:paused;
+}
+
+@keyframes flip{
+	100% {
+		background-position: -648px;
+	}
+
+}
