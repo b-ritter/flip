@@ -2,15 +2,51 @@
 <html>
 	<head>
 		<title>Flip a coin</title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="_css/style.css"/>
+
 	</head>
 	<body>
-		<a id="play_flip_btn" href="#">Flip a coin</a>
-		<div id="hand">
+		<section id="user_management">
+			<div id="signup">
+				<form action="#" method="post">
+					<label for="username">Name:</label>
+					<input type="text" id="username"/>
+					<button type="button" id="save_username">Save your flips</button>
+				</form>
+			</div>
+			<div id="username_display">
+				<p>Hello <span></span>!</p>
+				<div id="username_tools">
+					<form action="#" method="post">
+						<label for="new_username">Change user name</label>
+						<input type="text" id="new_username"/>
+						<button type="button" id="update_username">Update Name</button>
+
+						<label for="clear_data">Clear your stored data</label>
+						<button type="button" id="clear_data">Clear Now</button>
+
+						<label for="delete_user">Delete user</label>
+						<button type="button" id="delete_user">Delete User and Data</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section id="flip_display">
+		<div id="toggle_bit_source">
+			<p>Choose a random number generator:</p>
+			<div><a id="choose_hotbits" href="#">Hotbits</a><a href="#" id="choose_random_dot_org">Random.org</a><a id="choose_js" href="#">JavaScript</a></div>
+
 		</div>
-		<p id="result"></p>
+			<a id="play_flip_btn" href="#">Flip a coin</a>
+			<div id="hand"></div>
+			<p id="result">Heads or Tails</p>
+		</section>
+		<section id="data_display">
+			<div></div>
+		</section>
 		<script src="_js/jquery-2.0.3.min.js"></script>
-		<!--<script src="_js/d3.js"></script>-->
+		<script src="_js/d3.js"></script>
 		<script src="_js/flip.js"></script>
 	</body>
 </html>
